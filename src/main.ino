@@ -59,7 +59,7 @@ void recomendarBici() {
   lcd.setCursor(0, 0);
   lcd.print("BICI: "); lcd.print(t, 0); lcd.print(" C     ");
   lcd.setCursor(0, 1);
-  if (h > 90) { lcd.print("Pot plore! "); return; }
+  if (h > 90) { lcd.print("Pot ploure! "); return; }
 
   if (t < 5) lcd.print("Un fred que pela");
   else if (t >= 5 && t < 10) lcd.print("Invierno+Botin  ");
@@ -103,7 +103,7 @@ void loop() {
       lcd.setCursor(0, 0); lcd.print("   MONITOR DE   ");
       lcd.setCursor(0, 1); lcd.print("     CLIMA      ");
     } else {
-      lcd.setCursor(0, 0); lcd.print("  RECOMADADOR   ");
+      lcd.setCursor(0, 0); lcd.print("  RECOMANADOR   ");
       lcd.setCursor(0, 1); 
       if (modo == MODO1) lcd.print("(Mode: Runner)");
       else lcd.print("(Mode: Bici)");
